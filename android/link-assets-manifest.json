@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/RedHatDisplay-Bold.ttf",
+      "sha1": "d4c62f17bd50374d4796dfdfea0844701882ea96"
+    },
+    {
+      "path": "src/assets/fonts/RedHatDisplay-Regular.ttf",
+      "sha1": "a88bb6ead24bce67c673802676d453ad4d1a5ffd"
+    }
+  ]
+}

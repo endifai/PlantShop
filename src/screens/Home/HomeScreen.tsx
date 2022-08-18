@@ -8,13 +8,15 @@ export const HomeScreen = () => {
 
   return (
     <Layout>
-      <Title>{t('title')}</Title>
+      <Title>{t('header')}</Title>
     </Layout>
   )
 }
 
 const Title = styled.Text`
-  text-align: center;
   color: ${({ theme }) => theme.colors.primary};
-  font-size: 22px;
+  font-size: 24px;
+  font-family: ${({ theme }) => theme.fontFamily.title};
+  padding: 0px 24px;
+  margin-bottom: 6px;
 `

@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-PlantShop-PlantShopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PlantShop-PlantShopTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		0144522A91B14032BCFB0713 /* RedHatDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6D68ADBCB9E4147B398C63E /* RedHatDisplay-Regular.ttf */; };
+		DA16AC5EC2A6409AB1C03953 /* RedHatDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51CEB56ADF8F4796B1B4BD44 /* RedHatDisplay-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PlantShop/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-PlantShop-PlantShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantShop-PlantShopTests.release.xcconfig"; path = "Target Support Files/Pods-PlantShop-PlantShopTests/Pods-PlantShop-PlantShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E6D68ADBCB9E4147B398C63E /* RedHatDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "RedHatDisplay-Regular.ttf"; path = "../src/assets/fonts/RedHatDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		51CEB56ADF8F4796B1B4BD44 /* RedHatDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "RedHatDisplay-Bold.ttf"; path = "../src/assets/fonts/RedHatDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,16 @@
 			name = PlantShop;
 			sourceTree = "<group>";
 		};
+		2AEC211F79014CAE87A5DFF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6D68ADBCB9E4147B398C63E /* RedHatDisplay-Regular.ttf */,
+				51CEB56ADF8F4796B1B4BD44 /* RedHatDisplay-Bold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				2AEC211F79014CAE87A5DFF0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +259,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0144522A91B14032BCFB0713 /* RedHatDisplay-Regular.ttf in Resources */,
+				DA16AC5EC2A6409AB1C03953 /* RedHatDisplay-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
