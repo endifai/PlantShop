@@ -75,5 +75,12 @@ const tabBarStyle: StyleProp<ViewStyle> = {
   paddingLeft: 12,
   paddingRight: 12,
   zIndex: 2,
+  borderTopWidth: 0,
   elevation: 10,
+  shadowOffset: {
+    width: 0,
+    height: 3,
+  },
+  shadowRadius: 5,
+  shadowOpacity: 0.2,
 }
