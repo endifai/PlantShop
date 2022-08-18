@@ -1,7 +1,8 @@
 export const colors = {
-  primary: '#000000',
-  secondary: '#FFFFFF',
-  red: {
-    600: '#E74C3C',
-  },
+  primary: '#2E3C50',
+  background: '#FFFFFF',
+  description: '#A3A3A3',
+  accent: '#509424',
+  price: '#369D65',
+  inactive: '#BEBEBE',
 }

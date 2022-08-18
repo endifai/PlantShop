@@ -14,6 +14,6 @@ export const MainScreen = () => {
 
 const Title = styled.Text`
   text-align: center;
-  color: ${({ theme }) => theme.colors.red[600]};
+  color: ${({ theme }) => theme.colors.primary};
   font-size: 22px;
 `

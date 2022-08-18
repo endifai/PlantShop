@@ -11,7 +11,7 @@ export const SettingsScreen = () => {
     <View>
       <Text>Settings Screen</Text>
 
-      <Button title="Logout" color={theme.colors.red[600]} onPress={logout} />
+      <Button title="Logout" color={theme.colors.primary} onPress={logout} />
     </View>
   )
 }
