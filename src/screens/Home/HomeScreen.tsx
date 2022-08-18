@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next'
 import { View } from 'react-native'
 import styled from 'styled-components/native'
 
-export const MainScreen = () => {
-  const { t } = useTranslation('main')
+export const HomeScreen = () => {
+  const { t } = useTranslation('home')
 
   return (
     <View>
