@@ -3,12 +3,16 @@ import styled from 'styled-components/native'
 
 import { Layout } from 'src/components/Layout'
 
+import { BannersList } from './components/BannersList'
+
 export const HomeScreen = () => {
   const { t } = useTranslation('home')
 
   return (
     <Layout>
       <Title>{t('header')}</Title>
+
+      <BannersList />
     </Layout>
   )
 }
@@ -18,5 +22,5 @@ const Title = styled.Text`
   font-size: 24px;
   font-family: ${({ theme }) => theme.fontFamily.title};
   padding: 0px 24px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 `

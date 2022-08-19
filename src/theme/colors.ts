@@ -5,4 +5,5 @@ export const colors = {
   accent: '#509424',
   price: '#369D65',
   inactive: '#BEBEBE',
+  white: '#ffffff',
 }
