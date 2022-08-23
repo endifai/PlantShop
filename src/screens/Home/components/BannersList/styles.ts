@@ -1,6 +1,7 @@
-import styled, { css } from 'styled-components/native'
+import { Image, Text, View } from 'react-native'
+import styled, { css } from 'styled-components'
 
-export const Container = styled.View<{ color: string; isFirst: boolean }>`
+export const Container = styled(View)<{ color: string; isFirst: boolean }>`
   flex-direction: row;
   margin-right: 24px;
   ${({ isFirst }) =>
@@ -14,20 +15,20 @@ export const Container = styled.View<{ color: string; isFirst: boolean }>`
   background-color: ${({ color }) => color};
 `
 
-export const BannerImage = styled.Image`
+export const BannerImage = styled(Image)`
   width: 100%;
   height: 100%;
 `
 
-export const Content = styled.View`
+export const Content = styled(View)`
   width: 70%;
 `
 
-export const ImageContainer = styled.View`
+export const ImageContainer = styled(View)`
   width: 30%;
 `
 
-export const Description = styled.Text`
+export const Description = styled(Text)`
   color: ${({ theme }) => theme.colors.white};
   font-size: 12px;
   font-family: ${({ theme }) => theme.fontFamily.text};
