@@ -9,8 +9,10 @@ import {
 
 import { Plant } from 'src/types/plant'
 
-export const $plantsStore = createStore<Plant[]>([])
+export const $plantsMapStore = createStore<Record<string, Plant>>({})
 export const $categoryStore = createStore<string | null>(null)
+
+const $plantsStore = $plantsMapStore.map((state) => Object.values(state))
 
 export const $filteredPlants: Store<Plant[]> = combine(
   $plantsStore,
@@ -26,9 +28,15 @@ export const $filteredPlants: Store<Plant[]> = combine(
 
 export const toggleCategory = createEvent<string>()
 
-export const loadPlantsFx = createEffect<() => Promise<Plant[]>>(async () => {
-  const response = await fetch(`${Config.API_URL}/plants/`)
-  const plants = await response.json()
+export const loadPlantsFx = createEffect<() => Promise<Record<string, Plant>>>(
+  async () => {
+    const response = await fetch(`${Config.API_URL}/plants/`)
+    const plants = await response.json()
 
-  return plants
-})
+    return plants.reduce((acc: Record<string, Plant>, current: Plant) => {
+      acc[current.id] = current
+
+      return acc
+    }, {})
+  },
+)

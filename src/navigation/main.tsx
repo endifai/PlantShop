@@ -9,7 +9,7 @@ import { TabsNavigator } from './tabs'
 
 export type MainNavigatorParamList = {
   [RoutesEnum.MAIN]: BottomTabsParamList
-  [RoutesEnum.PLANT]: { params: { id: string } }
+  [RoutesEnum.PLANT]: { id: string }
 }
 
 const Stack = createNativeStackNavigator<MainNavigatorParamList>()
