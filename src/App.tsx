@@ -1,4 +1,5 @@
 import 'src/i18n'
+import 'src/store/init'
 
 import { NavigationContainer } from '@react-navigation/native'
 import { ThemeProvider } from 'styled-components'

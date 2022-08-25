@@ -18,6 +18,7 @@ module.exports = {
     'promise',
     'prettier',
     'simple-import-sort',
+    'effector',
   ],
 
   extends: [
@@ -25,6 +26,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:promise/recommended',
+    'plugin:effector/recommended',
+    'plugin:effector/scope',
   ],
 
   rules: {
