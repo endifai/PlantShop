@@ -1,14 +1,27 @@
-import { createEffect, createEvent, createStore } from 'effector'
+import Config from 'react-native-config'
+import { combine, createEffect, createEvent, createStore } from 'effector'
 
 import { Plant } from 'src/types/plant'
 
 export const $plantsStore = createStore<Plant[]>([])
 export const $categoryStore = createStore<string | null>(null)
 
+export const $filteredPlants = combine(
+  $plantsStore,
+  $categoryStore,
+  (plants, category): Plant[] => {
+    if (!category) {
+      return plants
+    }
+
+    return plants.filter((plant) => plant.category === category)
+  },
+)
+
 export const toggleCategory = createEvent<string>()
 
 export const loadPlantsFx = createEffect<() => Promise<Plant[]>>(async () => {
-  const response = await fetch('http://localhost:8000/plants/')
+  const response = await fetch(`${Config.API_URL}/plants/`)
   const plants = await response.json()
 
   return plants

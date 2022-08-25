@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
-import { ScrollView } from 'react-native'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { View } from 'react-native'
 import { useTheme } from 'styled-components/native'
 
 interface Props {
@@ -9,9 +8,8 @@ interface Props {
 
 export const Layout = ({ children }: Props) => {
   const theme = useTheme()
-  const { top } = useSafeAreaInsets()
 
-  const style = { backgroundColor: theme.colors.background, paddingTop: top }
+  const style = { backgroundColor: theme.colors.background }
 
-  return <ScrollView style={style}>{children}</ScrollView>
+  return <View style={style}>{children}</View>
 }

@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 export const StyledFlatList = styled(FlatList<string>)`
   padding-top: 8px;
   padding-bottom: 8px;
-  height: 96px;
+  margin-bottom: 8px;
 `
 
 export const Container = styled(TouchableOpacity)<{

@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-import { NavigatorScreenParams } from '@react-navigation/core'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import { PlantScreen } from 'src/screens/Plant'
@@ -9,8 +8,8 @@ import type { BottomTabsParamList } from './tabs'
 import { TabsNavigator } from './tabs'
 
 export type MainNavigatorParamList = {
-  [RoutesEnum.MAIN]: NavigatorScreenParams<BottomTabsParamList>
-  [RoutesEnum.PLANT]: NavigatorScreenParams<{ params: { id: string } }>
+  [RoutesEnum.MAIN]: BottomTabsParamList
+  [RoutesEnum.PLANT]: { params: { id: string } }
 }
 
 const Stack = createNativeStackNavigator<MainNavigatorParamList>()

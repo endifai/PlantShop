@@ -17,7 +17,7 @@ export const Container = styled(View)<{ color: string; isFirst: boolean }>`
 
 export const BannerImage = styled(Image)`
   width: 100%;
-  height: 100%;
+  height: 120px;
 `
 
 export const Content = styled(View)`
