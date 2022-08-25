@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { ImageStyle, StyleProp } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
@@ -8,7 +9,7 @@ import { Plant } from 'src/types/plant'
 
 import { Container, Name, Preview, Price } from './styles'
 
-export const PlantCard = ({ image, id, name, price }: Plant) => {
+export const PlantCard = memo(({ image, id, name, price }: Plant) => {
   const { push } =
     useNavigation<
       NativeStackNavigationProp<MainNavigatorParamList, RoutesEnum.MAIN>
@@ -27,7 +28,7 @@ export const PlantCard = ({ image, id, name, price }: Plant) => {
       <Price>{price}</Price>
     </Container>
   )
-}
+})
 
 const previewShadow: StyleProp<ImageStyle> = {
   shadowOffset: {
