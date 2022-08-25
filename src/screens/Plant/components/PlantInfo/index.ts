@@ -1,0 +1,1 @@
+export { PlantInfo } from './PlantInfo'

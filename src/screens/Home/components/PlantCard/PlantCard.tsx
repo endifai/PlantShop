@@ -15,7 +15,7 @@ export const PlantCard = memo(({ image, id, name, price }: Plant) => {
       NativeStackNavigationProp<MainNavigatorParamList, RoutesEnum.MAIN>
     >()
 
-  const handlePress = () => push(RoutesEnum.PLANT, { params: { id } })
+  const handlePress = () => push(RoutesEnum.PLANT, { id })
 
   return (
     <Container onPress={handlePress}>
