@@ -1,12 +1,18 @@
 import Config from 'react-native-config'
-import { combine, createEffect, createEvent, createStore } from 'effector'
+import {
+  combine,
+  createEffect,
+  createEvent,
+  createStore,
+  Store,
+} from 'effector'
 
 import { Plant } from 'src/types/plant'
 
 export const $plantsStore = createStore<Plant[]>([])
 export const $categoryStore = createStore<string | null>(null)
 
-export const $filteredPlants = combine(
+export const $filteredPlants: Store<Plant[]> = combine(
   $plantsStore,
   $categoryStore,
   (plants, category): Plant[] => {
