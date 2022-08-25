@@ -1,15 +1,18 @@
-import { FlatList } from 'react-native'
+import { FlatList, StyleProp, ViewStyle } from 'react-native'
 
 import { Banner } from './Banner'
 import { data } from './data'
 
-export const BannersList = () => {
-  return (
-    <FlatList
-      data={data}
-      renderItem={Banner}
-      horizontal
-      showsHorizontalScrollIndicator={false}
-    />
-  )
+export const BannersList = () => (
+  <FlatList
+    data={data}
+    renderItem={Banner}
+    horizontal
+    showsHorizontalScrollIndicator={false}
+    style={style}
+  />
+)
+
+const style: StyleProp<ViewStyle> = {
+  marginBottom: 8,
 }

@@ -4,6 +4,7 @@ import styled from 'styled-components/native'
 import { Layout } from 'src/components/Layout'
 
 import { BannersList } from './components/BannersList'
+import { Categories } from './components/Categories'
 
 export const HomeScreen = () => {
   const { t } = useTranslation('home')
@@ -13,6 +14,8 @@ export const HomeScreen = () => {
       <Title>{t('header')}</Title>
 
       <BannersList />
+
+      <Categories />
     </Layout>
   )
 }
