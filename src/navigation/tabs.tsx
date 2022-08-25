@@ -8,10 +8,8 @@ import { useTheme } from 'styled-components/native'
 
 import { NavIcon } from 'src/components/NavIcon'
 import { CartIcon, FavoritesIcon, HomeIcon, ProfileIcon } from 'src/icons'
-import { CartScreen } from 'src/screens/Cart'
-import { FavoritesScreen } from 'src/screens/Favorites'
+import { DevelopmentScreen } from 'src/screens/Development'
 import { HomeScreen } from 'src/screens/Home'
-import { ProfileScreen } from 'src/screens/Profile'
 
 import { RoutesEnum } from './routes'
 
@@ -47,17 +45,17 @@ export const TabsNavigator = (): ReactElement => {
       />
       <Tabs.Screen
         name={RoutesEnum.CART}
-        component={CartScreen}
+        component={DevelopmentScreen}
         options={{ tabBarIcon: NavIcon(CartIcon) }}
       />
       <Tabs.Screen
         name={RoutesEnum.FAVORITES}
-        component={FavoritesScreen}
+        component={DevelopmentScreen}
         options={{ tabBarIcon: NavIcon(FavoritesIcon) }}
       />
       <Tabs.Screen
         name={RoutesEnum.PROFILE}
-        component={ProfileScreen}
+        component={DevelopmentScreen}
         options={{ tabBarIcon: NavIcon(ProfileIcon) }}
       />
     </Tabs.Navigator>
